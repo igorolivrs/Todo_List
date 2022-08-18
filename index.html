@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To Do List</title>
+    <link rel="icon" href="./img/icon.png" />
     <!-- CSS -->
     <link rel="stylesheet" href="./css/styles.css" />
     <!-- JavaScript -->
@@ -24,9 +25,9 @@
         <h1>To do List</h1>
       </header>
       <form id="todo-form">
-        <p>Adicione uma tarefa:</p>
+        <p>Add a task:</p>
         <div class="form-control">
-          <input type="text" id="todo-input" placeholder="Adicionar tarefa" />
+          <input type="text" id="todo-input" placeholder="Add a task" />
           <button type="submit">
             <i class="fa-thin fa-plus"></i>
           </button>
@@ -34,7 +35,7 @@
       </form>
 
       <form id="edit-form" class="hide">
-        <p>Edite a sua tarefa:</p>
+        <p>Edit your task:</p>
         <div class="form-control">
           <input type="text" id="edit-input" />
           <button type="submit">
@@ -46,9 +47,9 @@
 
       <div id="toolbar">
         <div id="search">
-          <h4>Pesquisar:</h4>
+          <h4>Search:</h4>
           <form>
-            <input type="text" id="search-input" placeholder="search" />
+            <input type="text" id="search-input" placeholder="Search" />
             <button id="erase-btn">
               <i class="fa-solid fa-delete-left"></i>
             </button>
@@ -56,29 +57,17 @@
         </div>
 
         <div id="filter">
-          <h4>Filtrar:</h4>
+          <h4>Filter:</h4>
           <select id="filter-select">
-            <option value="all">Todos</option>
-            <option value="done">Feitos</option>
-            <option value="todo">A Fazer</option>
+            <option value="all">All</option>
+            <option value="done">Done</option>
+            <option value="todo">To do</option>
           </select>
         </div>
       </div>
 
-      <div id="todo-list">
-        <div class="todo">
-          <h3>Tarefa 1</h3>
-          <button class="finish-todo"><i class="fa-solid fa-check"></i></button>
-          <button class="edit-todo"><i class="fa-solid fa-pen"></i></button>
-          <button class="remove-todo"><i class="fa-solid fa-xmark"></i></button>
-        </div>
-        <div class="todo">
-          <h3>Tarefa 2</h3>
-          <button class="finish-todo"><i class="fa-solid fa-check"></i></button>
-          <button class="edit-todo"><i class="fa-solid fa-pen"></i></button>
-          <button class="remove-todo"><i class="fa-solid fa-xmark"></i></button>
-        </div>
-      </div>
+      <div id="todo-list"></div>
+      
     </div>
   </body>
 </html>
